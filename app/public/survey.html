@@ -6,6 +6,7 @@
   <title>Survey</title>
 
   <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="app/public/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
@@ -18,7 +19,7 @@
     <h1><b>Survey</b></h1>
     <HR>
     <h3><b>About You</b></h3>
-    <p>Answer on a scale of 1-5 on what you feel is suitable to your answer.</p>
+    <p>Answer on a scale of 1-5 on what you feel is suitable to the question.</p>
         <form>
             <div class="form-group">
                 <label for="user">Name (Required)</label>
@@ -34,11 +35,11 @@
                 <label for="question1">1. I prefer night over day.</label>
                 <select class="form-control" id="question1">
                 <option value="empty"></option>
-                <option value="answer1">1 - Strongly Disagree</option>
-                <option value="answer1">2</option>
-                <option value="answer1">3 - Neither Disagree/Agree</option>
-                <option value="answer1">4</option>
-                <option value="answer1">5 - Strongly Agree</option>
+                <option value="1" id="qa1">1 - Strongly Disagree</option>
+                <option value="2" id="qa1">2</option>
+                <option value="3" id="qa1">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa1">4</option>
+                <option value="5" id="qa1">5 - Strongly Agree</option>
                 </select>
             </div>
 
@@ -46,11 +47,11 @@
                 <label for="question2">2. I always enjoy being with a group of friends whenever I got out rather than by myself.</label>
                 <select class="form-control" id="question2">
                 <option value="empty"></option>
-                <option value="answer2">1 - Strongly Disagree</option>
-                <option value="answer2">2</option>
-                <option value="answer2">3 - Neither Disagree/Agree</option>
-                <option value="answer2">4</option>
-                <option value="answer2">5 - Strongly Agree</option>
+                <option value="1" id="qa2">1 - Strongly Disagree</option>
+                <option value="2" id="qa2">2</option>
+                <option value="3" id="qa2">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa2">4</option>
+                <option value="5" id="qa2">5 - Strongly Agree</option>
                 </select>
             </div>
 
@@ -58,11 +59,11 @@
                 <label for="question3">3. I prefer cats over dogs.</label>
                 <select class="form-control" id="question3">
                 <option value="empty"></option>
-                <option value="answer3">1 - Strongly Disagree</option>
-                <option value="answer3">2</option>
-                <option value="answer3">3 - Neither Disagree/Agree</option>
-                <option value="answer3">4</option>
-                <option value="answer3">5 - Strongly Agree</option>
+                <option value="1" id="qa3">1 - Strongly Disagree</option>
+                <option value="2" id="qa3">2</option>
+                <option value="3" id="qa3">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa3">4</option>
+                <option value="5" id="qa3">5 - Strongly Agree</option>
                 </select>
             </div>
 
@@ -70,11 +71,11 @@
                 <label for="question4">4. I prefer the moon more than the stars.</label>
                 <select class="form-control" id="question4">
                 <option value="empty"></option>
-                <option value="answer4">1 - Strongly Disagree</option>
-                <option value="answer4">2</option>
-                <option value="answer4">3 - Neither Disagree/Agree</option>
-                <option value="answer4">4</option>
-                <option value="answer4">5 - Strongly Agree</option>
+                <option value="1" id="qa4">1 - Strongly Disagree</option>
+                <option value="2" id="qa4">2</option>
+                <option value="3" id="qa4">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa4">4</option>
+                <option value="5" id="qa4">5 - Strongly Agree</option>
                 </select>
             </div>
 
@@ -82,11 +83,11 @@
                 <label for="question5">5. The color black is better than any other colors.</label>
                 <select class="form-control" id="question5">
                 <option value="empty"></option>
-                <option value="answer5">1 - Strongly Disagree</option>
-                <option value="answer5">2</option>
-                <option value="answer5">3 - Neither Disagree/Agree</option>
-                <option value="answer5">4</option>
-                <option value="answer5">5 - Strongly Agree</option>
+                <option value="1" id="qa5">1 - Strongly Disagree</option>
+                <option value="2" id="qa5">2</option>
+                <option value="3" id="qa5">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa5">4</option>
+                <option value="5" id="qa5">5 - Strongly Agree</option>
                 </select>
             </div>
 
@@ -94,11 +95,11 @@
                 <label for="question6">6. I consider myself more of a leader than a follower.</label>
                 <select class="form-control" id="question6">
                 <option value="empty"></option>
-                <option value="answer6">1 - Strongly Disagree</option>
-                <option value="answer6">2</option>
-                <option value="answer6">3 - Neither Disagree/Agree</option>
-                <option value="answer6">4</option>
-                <option value="answer6">5 - Strongly Agree</option>
+                <option value="1" id="qa6">1 - Strongly Disagree</option>
+                <option value="2" id="qa6">2</option>
+                <option value="3" id="qa6">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa6">4</option>
+                <option value="5" id="qa6">5 - Strongly Agree</option>
                 </select>
             </div>
 
@@ -106,11 +107,11 @@
                 <label for="question7">7. I will fight for my family and close friends.</label>
                 <select class="form-control" id="question7">
                 <option value="empty"></option>
-                <option value="answer7">1 - Strongly Disagree</option>
-                <option value="answer7">2</option>
-                <option value="answer7">3 - Neither Disagree/Agree</option>
-                <option value="answer7">4</option>
-                <option value="answer7">5 - Strongly Agree</option>
+                <option value="1" id="qa7">1 - Strongly Disagree</option>
+                <option value="2" id="qa7">2</option>
+                <option value="3" id="qa7">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa7">4</option>
+                <option value="5" id="qa7">5 - Strongly Agree</option>
                 </select>
             </div>
 
@@ -118,11 +119,11 @@
                 <label for="question8">8. I would rather visit New York than San Francisco.</label>
                 <select class="form-control" id="question8">
                 <option value="empty"></option>
-                <option value="answer8">1 - Strongly Disagree</option>
-                <option value="answer8">2</option>
-                <option value="answer8">3 - Neither Disagree/Agree</option>
-                <option value="answer8">4</option>
-                <option value="answer8">5 - Strongly Agree</option>
+                <option value="1" id="qa8">1 - Strongly Disagree</option>
+                <option value="2" id="qa8">2</option>
+                <option value="3" id="qa8">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa8">4</option>
+                <option value="5" id="qa8">5 - Strongly Agree</option>
                 </select>
             </div>
 
@@ -130,11 +131,11 @@
                 <label for="question9">9. I prefer to sleep in during my day off from work/school.</label>
                 <select class="form-control" id="question9">
                 <option value="empty"></option>
-                <option value="answer9">1 - Strongly Disagree</option>
-                <option value="answer9">2</option>
-                <option value="answer9">3 - Neither Disagree/Agree</option>
-                <option value="answer9">4</option>
-                <option value="answer9">5 - Strongly Agree</option>
+                <option value="1" id="qa9">1 - Strongly Disagree</option>
+                <option value="2" id="qa9">2</option>
+                <option value="3" id="qa9">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa9">4</option>
+                <option value="5" id="qa9">5 - Strongly Agree</option>
                 </select>
             </div>
 
@@ -142,18 +143,19 @@
                 <label for="question10">10. I like to sing.</label>
                 <select class="form-control" id="question10">
                 <option value="empty"></option>
-                <option value="answer10">1 - Strongly Disagree</option>
-                <option value="answer10">2</option>
-                <option value="answer10">3 - Neither Disagree/Agree</option>
-                <option value="answer10">4</option>
-                <option value="answer10">5 - Strongly Agree</option>
+                <option value="1" id="qa10">1 - Strongly Disagree</option>
+                <option value="2" id="qa10">2</option>
+                <option value="3" id="qa10">3 - Neither Disagree/Agree</option>
+                <option value="4" id="qa10">4</option>
+                <option value="5" id="qa10">5 - Strongly Agree</option>
                 </select>
             </div>
         </form>
     </div>
     
     <div class="text-center">
-    <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+    <button id="submitBtn" type="submit" class="btn btn-success btn-lg" data-toggle="modal"
+    data-target="#friendMatch">Submit</button>
     </div>
                 
     <!-- Modal after survey completion -->
@@ -161,12 +163,12 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="modal-title">Your New Best Friend!</h1>
+                    <h3 id="mod-head">Your New Best Friend!</h3>
                 </div>
 
                 <div class="modal-body">
-                    <h2 id="bestFriend"></h2>
+                    <p id="newFriend"></p>
+                    <img id="nfPic" src="">
                 </div>
 
                 <div class="modal-footer">
@@ -178,39 +180,58 @@
 
     <!-- Javascript starts here -->
     <script type="text/javascript">
-        $('#submitBtn').on('click') {
-            // Check if the required fields are filled in
-            var isFilled = true;
 
-            if ($('#user-name').val() || $('#user-photo').val() === '') {
-                isFilled = false;
-                alert("Please fill out the required fields.");
-            } else {
-                var userInput = {
-                    name: $('#user-name').val().trim(),
-                    image: $('#user-photo').val().trim(), 
-                    scores: [
-                        $('#question1').val(),
-                        $('#question2').val(),
-                        $('#question3').val(),
-                        $('#question4').val(),
-                        $('#question5').val(),
-                        $('#question6').val(),
-                        $('#question7').val(),
-                        $('#question8').val(),
-                        $('#question9').val(),
-                        $('#question10').val(),
-                    ]
-                }
+        $('#submitBtn').on('click', function(event) {
+            event.preventDefault();
+
+            var userInput = {
+                name: $('#user-name').val().trim(),
+                photo: $('#user-photo').val().trim(), 
+                scores: [
+                    $('#qa1').val(),
+                    $('#qa2').val(),
+                    $('#qa3').val(),
+                    $('#qa4').val(),
+                    $('#qa5').val(),
+                    $('#qa6').val(),
+                    $('#qa7').val(),
+                    $('#qa8').val(),
+                    $('#qa9').val(),
+                    $('#qa10').val()
+                ]
             };
+            console.log(userInput);
 
-            var currentURL = window.location.origin;
+            $.post('/api/friends', userInput, function(data) {
+                console.log(data);
 
-            $.post(currentURL + '/api/friends', userInput, function(data) {
+                $('#newFriend').text(data.name);
+                $('#nfPic').attr('src', data.photo);
                 $('#friendMatch').modal('show');
+
+                // clear all the fields
+                $('#user-name').val('');
+                $('#user-photo').val('');
+                $('#qa1').val('');
+                $('#qa2').val('');
+                $('#qa3').val('');
+                $('#qa4').val('');
+                $('#qa5').val('');
+                $('#qa6').val('');
+                $('#qa7').val('');
+                $('#qa8').val('');
+                $('#qa9').val('');
+                $('#qa10').val('');
             })
-        };
+        });
     </script>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p><a href="https://github.com/lydmgem">Lydia's Github |</a><a href="/api/friends"> API Friends |</a><a href="/"> Home</a></p>
+        </div>
+    </footer>
 
 </body>
 </html>

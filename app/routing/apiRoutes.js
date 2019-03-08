@@ -2,15 +2,14 @@ var path = require("path");
 var friends = require("../data/friends");
 
 module.exports = function (app) {
+    console.log('___ENTER apiRoutes.js___');
 
-
-    // grabs friends list displays json
+    // GET the friends list
     app.get("/api/friends", function (req, res) {
         res.json(friends);
     });
 
     app.post("/api/friends", function (req, res) {
-        // grabs users score to compare with simpson friends
         var newUserScores = req.body.scores;
         var scoresArray = [];
         var bestMatch = 0;
@@ -23,7 +22,6 @@ module.exports = function (app) {
                 diffInScore += (Math.abs(parseInt(friends[i].scores[j] - parseInt(newUserScores[j]))));
             }
 
-            // push results into "scoresArray var"
             scoresArray.push(diffInScore);
         }
 
@@ -33,9 +31,9 @@ module.exports = function (app) {
             } 
         }
     
-        var newFriend = friends[bestMatch];
-        res.json(newFriend);
+        var newF = friends[bestMatch];
+        res.json(newF);
     
+        friends.push(req.body)
     });
-
 };
