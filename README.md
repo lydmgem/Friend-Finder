@@ -11,4 +11,4 @@ FriendFinder is essentially like a dating app, but for finding friends.
 # NPM Packages Used:
 * express
 * path
-* 
+* body-parser
